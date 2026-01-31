@@ -1,0 +1,53 @@
+body {
+  font-family: Arial;}
+
+  
+ 
+ .name-input {
+  font-size: 15px;
+  padding: 6px;
+}
+.del-button{
+
+  background-color: rgba(174, 1, 1, 0.854);
+  color: white;
+  border:none;
+  font-size: 23px;
+  padding: 4px 18px;
+}
+
+.js-date{
+
+
+  
+}
+
+.js-button{
+  background-color: green;
+  color: white;
+  border:none;
+  font-size: 23px;
+  padding: 4px 31px;
+}
+.js-button:disabled{
+  background-color: rgba(114, 117, 114, 0.785);
+  color: rgb(0, 0, 0);
+  border:none;
+  font-size: 23px;
+  padding: 4px 31px;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  margin-bottom: 1px;
+}
+.item-3 {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-bottom: 13px;
+}
