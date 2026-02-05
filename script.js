@@ -28,8 +28,10 @@ function addTodo() {
 function renderTodolist() {
   let todoHtml = "";
 
-  for (let i = 0; i < todoList.length; i++) {
-    const todoObject = todoList[i];
+  todoList.forEach((
+
+    todoObject,index
+  ) => {
     const { userInput } = todoObject;
     const { dateInput } = todoObject;
     todoHtml += `<div class = "item-3">
@@ -41,7 +43,7 @@ function renderTodolist() {
    <div> <button
    class="del-button"
    onclick="
-    todoList.splice(${i},1);
+    todoList.splice(${index},1);
 
   localStorage.setItem('savedData',JSON.stringify(todoList));
     
@@ -54,7 +56,11 @@ function renderTodolist() {
   </div>
    </div>
   `;
-  }
+
+  })
+
+
+  
   document.querySelector(".render-html").innerHTML = todoHtml;
 }
 inputElement.addEventListener("input", updateButton);
